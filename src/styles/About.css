@@ -1,0 +1,85 @@
+.about-section {
+  width: 100%;
+  padding: 12vw 0 0 2.08vw;
+}
+
+.about-section h2 {
+  font-family: 'Stengazeta';
+  font-size: 5.2vw;
+  font-weight: 400;
+  line-height: 3.12vw;
+  text-align: left;
+  color: rgba(255, 216, 190, 1);
+  margin-bottom: 2.5vw;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.about-content p {
+  font-family: 'Montserrat';
+  font-size: 2.08vw;
+  font-weight: 400;
+  line-height: 2.5vw;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.about-button {
+  font-family: 'Montserrat';
+  font-size: 2.08vw;
+  font-weight: 400;
+  line-height: 2.5vw;
+  background-color: rgba(255, 216, 190, 1);
+  color: rgba(0, 0, 0, 1);
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 2.29vw;
+  cursor: pointer;
+  box-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+}
+
+.about-dropdown {
+  position: relative;
+}
+
+.about-dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 3.5vw;
+  background: rgba(255, 255, 255, 0.75);
+  min-width: 75%;
+  box-shadow: 0.1vw 0.1vw 0 0.1vw rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.about-dropdown-menu li {
+  list-style: none;
+}
+
+.about-dropdown-menu li a {
+  font-family: 'Montserrat';
+  font-size: 2.08vw;
+  font-weight: 400;
+  line-height: 2.5vw;
+  color: rgb(0, 0, 0);
+  padding: 0.3vw;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+  text-align: left;
+}
+
+.about-dropdown-menu li a:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.about-dropdown:hover .about-dropdown-menu,
+.about-dropdown:focus-within .about-dropdown-menu {
+  display: block;
+}

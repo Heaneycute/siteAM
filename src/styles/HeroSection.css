@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Stengazeta';
+  src: local('Stengazeta'), url('/fonts/Stengazeta.ttf') format('truetype');
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('/backIMG.png') no-repeat center center/cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -4.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-slogan {
+  font-family: 'Stengazeta';
+  color: rgba(255, 255, 255, 1);
+  line-height: 3.12vw;
+  padding-bottom: 6vw;
+}
+
+.hero-section h1 {
+  font-size: 14.58vw;
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 5vw;
+  margin-top: 4.5vw;
+}
+
+.newspaper-chunks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.chunk {
+  position: absolute;
+  pointer-events: none;
+}
+
+.left-chunk {
+  bottom: 0;
+  left: -0.3vw;
+  width: 45%;
+  z-index: 1;
+}
+
+.middle-chunk {
+  bottom: -0.31vw;
+  left: 24.9vw;
+  width: 60%;
+}
+
+.right-chunk {
+  bottom: -1vw;
+  right: 0;
+  width: 45%;
+}
+
+.bottom-chunk {
+  bottom: -12vw;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}

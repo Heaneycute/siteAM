@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  padding: 1vw 0;
+  background: #000;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.footer p {
+  font-family: 'Montserrat';
+  font-size: 2.08vw;
+}

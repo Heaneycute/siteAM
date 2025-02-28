@@ -1,0 +1,35 @@
+.marquee-container {
+  width: 100%;
+  padding: 5vw 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-text {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-text:hover {
+  animation-play-state: paused;
+}
+
+.marquee-text span {
+  font-family: 'Stengazeta';
+  font-size: 5.2vw;
+  font-weight: 400;
+  line-height: 3.12vw;
+  color: rgba(255, 216, 190, 1);
+  padding-right: 1vw;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

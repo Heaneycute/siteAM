@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+  height: auto;
+  padding: 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.61);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.header-logo img {
+  width: 4.17vw;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-nav li {
+  position: relative;
+}
+
+.header-nav li a,
+.header-nav .dropdown-toggle {
+  font-family: 'Montserrat';
+  font-size: 2.6vw;
+  font-weight: 400;
+  line-height: 3.17vw;
+  color: rgba(255, 255, 255, 1);
+  padding: 0vw 1vw;
+  border-radius: 1.3vw;
+  transition: background 0.3s;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav li a:hover,
+.header-nav .dropdown-toggle:hover {
+  background: #e31e24;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 0.42vw;
+  box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu li a {
+  font-family: 'Montserrat';
+  font-size: 1.56vw;
+  line-height: 2.08vw;
+  color: rgba(255, 255, 255, 1);
+  padding: 0.5vw;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background: #e31e24;
+}

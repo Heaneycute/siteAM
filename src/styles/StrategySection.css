@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.strategy-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5vw;
+  position: relative;
+  gap: 14vw;
+}
+
+.strategy-image {
+  position: relative;
+}
+
+.strategy-image-container {
+  position: relative;
+  width: 15.62vw;
+}
+
+.mayakovsky-image {
+  position: relative;
+  width: 22.92vw;
+  height: 31.77vw;
+  z-index: 2;
+}
+
+.circle-background {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-34.3%);
+  width: 23.07vw;
+  height: 22.86vw;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.signature {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-41%);
+  width: 33.85vw;
+  height: 15.62vw;
+  z-index: 1;
+}
+
+.strategy-text {
+  margin-top: 5vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+.strategy-text p {
+  font-family: 'Montserrat';
+  font-size: 2.08vw;
+  font-weight: 400;
+  line-height: 2.5vw;
+  text-align: left;
+  margin-bottom: 2vw;
+}
+
+.strategy-button {
+  font-family: 'Montserrat';
+  font-size: 2.08vw;
+  font-weight: 400;
+  line-height: 2.5vw;
+  text-align: left;
+  background-color: rgba(255, 216, 190, 1);
+  color: rgba(0, 0, 0, 1);
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 2.3vw;
+  cursor: pointer;
+  box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.45);
+}

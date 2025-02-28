@@ -1,0 +1,14 @@
+.illustrations-page {
+  padding: 2vw;
+  text-align: center;
+}
+
+.illustrations-page h1 {
+  font-size: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.illustrations-page p {
+  font-size: 1vw;
+  line-height: 0.5vw;
+}
