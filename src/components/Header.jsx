@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <header className="header" role="banner">
       <Link to="/" className="header-logo" onClick={handleLinkClick}>
-        <img src="/LogoAM.svg" alt="Логотип агентства имени Маяковского" loading="lazy" />
+        <img src="/logoAM.svg" alt="Логотип агентства имени Маяковского" loading="lazy" />
       </Link>
       <nav className="header-nav" aria-label="Основная навигация">
         <ul>
