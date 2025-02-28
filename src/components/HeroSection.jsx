@@ -3,10 +3,10 @@ import clsx from 'clsx';
 
 const HeroSection = () => {
   const newspaperChunks = [
-    { src: '/leftChunk.svg', alt: 'Левая часть газеты', className: 'left-chunk' },
-    { src: '/middleChunk.svg', alt: 'Средняя часть газеты', className: 'middle-chunk' },
-    { src: '/rightChunk.svg', alt: 'Правая часть газеты', className: 'right-chunk' },
-    { src: '/bottomChunk.svg', alt: 'Нижняя часть газеты', className: 'bottom-chunk' },
+    { src: '/siteAM/leftChunk.svg', alt: 'Левая часть газеты', className: 'left-chunk' },
+    { src: '/siteAM/middleChunk.svg', alt: 'Средняя часть газеты', className: 'middle-chunk' },
+    { src: '/siteAM/rightChunk.svg', alt: 'Правая часть газеты', className: 'right-chunk' },
+    { src: '/siteAM/bottomChunk.svg', alt: 'Нижняя часть газеты', className: 'bottom-chunk' },
   ];
 
   return (

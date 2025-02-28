@@ -210,22 +210,22 @@ export default function SMMPage() {
           <div className="circle-background-smm"></div>
           <img
             className="illustration-layer signature-smm"
-            src="/signature.png"
+            src="/siteAM/signature.png"
             alt="signature"
           />
           <img
             className="illustration-layer smm-back-chunk"
-            src="/smmBackChunk.png"
+            src="/siteAM/smmBackChunk.png"
             alt="smmBackChunk"
           />
           <img
             className="illustration-layer smm-chunk"
-            src="/smmChunk.png"
+            src="/siteAM/smmChunk.png"
             alt="smmChunk"
           />
           <img
             className="illustration-layer mayakovskii-kartin"
-            src="/mayakovskii-kartin.png"
+            src="/siteAM/mayakovskii-kartin.png"
             alt="mayakovskii-kartin"
           />
         </div>

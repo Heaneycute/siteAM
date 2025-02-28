@@ -24,7 +24,7 @@ function App() {
           <main>
             <Routes>
               <Route
-                path="/"
+                path="/siteAM"
                 element={
                   <>
                     <HeroSection />

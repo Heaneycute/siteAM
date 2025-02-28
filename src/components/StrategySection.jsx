@@ -9,13 +9,13 @@ const StrategySection = () => {
         <div className="strategy-image-container">
           <div className="circle-background" aria-hidden="true" />
           <img
-            src="/Mayakovsky.svg"
+            src="/siteAM/Mayakovsky.svg"
             alt="Владимир Маяковский"
             className="mayakovsky-image"
             loading="lazy"
           />
           <img
-            src="/Vladimir_Mayakovsky_signature.svg"
+            src="/siteAM/Vladimir_Mayakovsky_signature.svg"
             alt="Подпись Владимира Маяковского"
             className="signature"
             loading="lazy"

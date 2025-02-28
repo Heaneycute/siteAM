@@ -6,7 +6,7 @@ const PortfolioAndTeam = () => {
 
   const portfolioItems = [
     {
-      src: '/eyelashMaster.png',
+      src: '/siteAM/eyelashMaster.png',
       alt: 'SMM',
       caption: 'Портфолио по SMM',
       overlayText: 'SMM',
@@ -16,7 +16,7 @@ const PortfolioAndTeam = () => {
       transform: 'translateX(-67%)',
     },
     {
-      src: '/illustration.jpg',
+      src: '/siteAM/illustration.jpg',
       alt: 'Иллюстрации',
       caption: 'Портфолио по иллюстрациям',
       overlayText: 'Иллюстрации',
@@ -26,7 +26,7 @@ const PortfolioAndTeam = () => {
       transform: 'translateX(-35%)',
     },
     {
-      src: '/Copywriting.jpg',
+      src: '/siteAM/Copywriting.jpg',
       alt: 'Копирайтинг',
       caption: 'Портфолио по копирайтингу',
       overlayText: 'Копирайтинг',
@@ -36,7 +36,7 @@ const PortfolioAndTeam = () => {
       transform: 'translateX(-35%)',
     },
     {
-      src: '/design.jpg',
+      src: '/siteAM/design.jpg',
       alt: 'Дизайн',
       caption: 'Портфолио по дизайну',
       overlayText: 'Дизайн',
