@@ -14,6 +14,7 @@ import IllustrationsPage from './components/Pages/IllustrationsPage';
 import SMMPage from './components/Pages/SMMPage';
 import Footer from './components/Footer';
 import MarqueeeText from './components/MarqueeText';
+import PartnersSection from './components/PartnersSection';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
                     <PortfolioAndTeam />
                     <MarqueeeText />
                     <StrategySection />
+                    <PartnersSection />
                     <ContactSection />
                   </>
                 }

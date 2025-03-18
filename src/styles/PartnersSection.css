@@ -1,0 +1,40 @@
+.partners-section {
+    background: rgba(255, 216, 190, 1);
+    padding: 2vw 3vw;
+    margin-top: 4vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .partners-title {
+    font-family: 'Stengazeta';
+    font-size: 3.64vw;
+    font-weight: 400;
+    line-height: 3.12vw;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+    margin-bottom: 2vw;
+  }
+  
+  .partners-logos {
+    display: flex;
+    width: max-content; 
+    animation: scroll 20s linear infinite;
+  }
+  
+  .partner-logo {
+    height: 5vw;
+    margin-right: 2vw;
+    object-fit: contain;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
