@@ -36,6 +36,11 @@ const Header = () => {
       <nav className="header-nav" aria-label="Основная навигация">
         <ul>
           <li>
+            <Link to="/siteAM" onClick={handleLinkClick}>
+              Главная
+            </Link>
+          </li>
+          <li>
             <a
               href="https://drive.google.com/file/d/10eymJko3q8KPP8L3pp33kwfJ7xDpxQ1d"
               target="_blank"

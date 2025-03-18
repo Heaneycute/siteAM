@@ -1,23 +1,21 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownItems = [
-    { href: '/design', label: 'Дизайн' },
-    { href: '/copywriting', label: 'Копирайтинг' },
-    { href: '/illustrations', label: 'Иллюстрации' },
-    { href: '/smm', label: 'SMM' },
+    { to: '/design', label: 'Дизайн' },
+    { to: '/copywriting', label: 'Копирайтинг' },
+    { to: '/illustrations', label: 'Иллюстрации' },
+    { to: '/smm', label: 'SMM' },
   ];
 
   return (
     <section id="about" className="about-section">
       <h2>Горим своим делом</h2>
       <div className="about-content">
-        <p>
-          С особенным вниманием относимся к каждому <br />
-          проекту, доверенному в наши руки.
-        </p>
+        <p>С особенным вниманием относимся к каждому проекту, доверенному в наши руки.</p>
         <div className="about-dropdown">
           <button
             className="about-button"
@@ -34,7 +32,7 @@ const About = () => {
             >
               {dropdownItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href}>{item.label}</a>
+                  <Link to={item.to}>{item.label}</Link>
                 </li>
               ))}
             </ul>

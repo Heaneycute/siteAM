@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  height: auto;
-  padding: 0 1vw;
+  height: 5.88vw;
+  padding: 0.1vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .header-logo img {
-  width: 4.17vw;
+  width: 6vw;
   aspect-ratio: 1;
   cursor: pointer;
 }
@@ -21,6 +21,7 @@
 .header-nav ul {
   display: flex;
   list-style: none;
+  gap: 1.5vw;
 }
 
 .header-nav li {
@@ -29,10 +30,9 @@
 
 .header-nav li a,
 .header-nav .dropdown-toggle {
-  font-family: 'Montserrat';
-  font-size: 2.6vw;
+  font-family: 'SFProText-Light';
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 3.17vw;
   color: rgba(255, 255, 255, 1);
   padding: 0vw 1vw;
   border-radius: 1.3vw;
@@ -69,7 +69,7 @@
 }
 
 .dropdown-menu li a {
-  font-family: 'Montserrat';
+  font-family: 'SFProText-Light';
   font-size: 1.56vw;
   line-height: 2.08vw;
   color: rgba(255, 255, 255, 1);

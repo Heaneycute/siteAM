@@ -1,108 +1,96 @@
-import { useState } from 'react';
 import '../styles/PortfolioAndTeam.css';
 
 const PortfolioAndTeam = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const portfolioItems = [
+  const teamMembers = [
     {
-      src: '/siteAM/eyelashMaster.png',
-      alt: 'SMM',
-      caption: 'Портфолио по SMM',
-      overlayText: 'SMM',
-      overlayPos: { top: '14vw', left: '0.5vw' },
-      captionPos: { bottom: '0.1vw', right: '13vw' },
-      fullOverlayPos: { top: '15vw', left: '7vw' },
-      transform: 'translateX(-67%)',
+      src: '/siteAM/Valeriia.jpg',
+      name: 'Валерия',
+      role: 'Руководитель и основатель агентства.',
     },
     {
-      src: '/siteAM/illustration.jpg',
-      alt: 'Иллюстрации',
-      caption: 'Портфолио по иллюстрациям',
-      overlayText: 'Иллюстрации',
-      overlayPos: { top: '5vw', left: '-8.5vw' },
-      captionPos: { bottom: '0.1vw', right: '17vw' },
-      fullOverlayPos: { top: '15.5vw', left: '1.4vw' },
-      transform: 'translateX(-35%)',
+      src: '/siteAM/Ekaterina.jpg',
+      name: 'Екатерина',
+      role: 'Ведущий SMM-специалист, ответственна за создание контента, съёмки, рекламу и таргетинг.',
     },
     {
-      src: '/siteAM/Copywriting.jpg',
-      alt: 'Копирайтинг',
-      caption: 'Портфолио по копирайтингу',
-      overlayText: 'Копирайтинг',
-      overlayPos: { top: '5.5vw', left: '-7.8vw' },
-      captionPos: { bottom: '6.4vw', right: '19vw' },
-      fullOverlayPos: { top: '16vw', left: '-0.6vw' },
-      transform: 'translateX(-35%)',
+      src: '/siteAM/Aleksandra.jpg',
+      name: 'Александра',
+      role: 'Главный дизайнер, ответственна за визуальный маркетинг брендов, дизайн для сайтов, маркетплейсов и бизнеса.',
     },
     {
-      src: '/siteAM/design.jpg',
-      alt: 'Дизайн',
-      caption: 'Портфолио по дизайну',
-      overlayText: 'Дизайн',
-      overlayPos: { top: '10vw', left: '-2.5vw' },
-      captionPos: { bottom: '0.1vw', right: '7vw' },
-      fullOverlayPos: { top: '15.8vw', left: '-2.8vw' },
-      transform: 'translateX(-21%)',
+      src: '/siteAM/Darya.jpg',
+      name: 'Дарья',
+      role: 'Иллюстратор, работает в проектах с литературными издательствами, создаёт обложки, материалы для печати.',
+    },
+    {
+      src: '/siteAM/Evgeniy.jpg',
+      name: 'Евгений',
+      role: 'Fullstack-разработчик, отвечает за внутреннюю составляющую сайтов, код.',
     },
   ];
 
-  const handleImageClick = (item) => {
-    setSelectedItem(item);
-  };
-
-  const handleClose = () => {
-    setSelectedItem(null);
-  };
+  const portfolioItems = [
+    {
+      src: '/siteAM/design.jpg',
+      caption: 'Портфолио по дизайну',
+    },
+    {
+      src: '/siteAM/smm.jpg',
+      caption: 'Портфолио по SMM',
+    },
+    {
+      src: '/siteAM/illustration.jpg',
+      caption: 'Портфолио по иллюстрациям',
+    },
+    {
+      src: '/siteAM/Copywriting.jpg',
+      caption: 'Портфолио по копирайтингу',
+    },
+  ];
 
   return (
     <section className="portfolio-and-team">
+      <h2>Наша команда</h2>
       <div className="team-description">
         <p>
           В команде работают 5 специалистов с высшим образованием и опытом от 3 лет.
-          <br />
-          Каждый кейс в портфолио реализован нашими совместными усилиями, состав
-          <br /> агентства не изменился с самого начала. А это значит, что наша работа
-          всегда
-          <br />
-          слаженная, согласованная, оперативная и профессиональная :)
+          Каждый кейс в портфолио <br />
+          реализован нашими совместными усилиями, состав агентства не изменился с самого
+          начала. А это значит, <br />
+          что наша работа всегда слаженная, согласованная, оперативная и профессиональная
+          :)
         </p>
       </div>
+      <div className="team-members">
+        <div className="team-row">
+          {teamMembers.slice(0, 3).map((member, index) => (
+            <div className="team-member" key={index}>
+              <img src={member.src} alt={member.name} className="team-image" loading="lazy" />
+              <p className="team-name">{member.name}</p>
+              <p className="team-role">{member.role}</p>
+            </div>
+          ))}
+        </div>
+        <div className="team-row team-row-bottom">
+          {teamMembers.slice(3, 5).map((member, index) => (
+            <div className="team-member" key={index + 3}>
+              <img src={member.src} alt={member.name} className="team-image" loading="lazy" />
+              <p className="team-name">{member.name}</p>
+              <p className="team-role">{member.role}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <h3>Портфолио</h3>
       <div className="portfolio-section">
         <div className="portfolio-gallery">
           {portfolioItems.map((item, index) => (
             <div className="portfolio-item" key={index}>
-              <div className="image-container" onClick={() => handleImageClick(item)}>
-                <div className="image-overlay" style={item.overlayPos}>
-                  {item.overlayText}
-                </div>
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="cropped-image"
-                  style={{ transform: item.transform }}
-                  loading="lazy"
-                />
-              </div>
+              <img src={item.src} alt={item.caption} className="portfolio-image" loading="lazy" />
+              <p className="portfolio-caption">{item.caption}</p>
             </div>
           ))}
         </div>
-        {selectedItem && (
-          <div className="full-image-container" onClick={handleClose}>
-            <div className="full-image-overlay" style={selectedItem.fullOverlayPos}>
-              {selectedItem.overlayText}
-            </div>
-            <img
-              src={selectedItem.src}
-              alt="Full Size"
-              className="full-image"
-              loading="lazy"
-            />
-            <p className="portfolio-caption" style={selectedItem.captionPos}>
-              {selectedItem.caption}
-            </p>
-          </div>
-        )}
       </div>
     </section>
   );

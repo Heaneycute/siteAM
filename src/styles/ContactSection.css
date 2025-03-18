@@ -4,20 +4,20 @@
 }
 
 .contact-section p {
-  font-family: 'Montserrat';
-  font-size: 2.08vw;
+  font-family: 'SFProText-Light';
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
   margin-bottom: 2vw;
   color: rgba(255, 255, 255, 1);
 }
 
 .contact-button {
-  font-family: 'Montserrat';
-  font-size: 2.08vw;
+  font-family: 'SFProText-Light';
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   background-color: rgba(255, 216, 190, 1);
   color: rgba(0, 0, 0, 1);
   border: none;
@@ -25,4 +25,16 @@
   border-radius: 2.3vw;
   cursor: pointer;
   box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5vw;
+  width: 41.4vw;
+  height: 4.16vw;
+  padding-left: 3vw;
+}
+
+.tg-icon {
+  width: 3.28vw;
+  aspect-ratio: 1;
+  vertical-align: middle; 
 }

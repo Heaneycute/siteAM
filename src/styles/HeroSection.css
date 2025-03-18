@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: -4.5vw;
+  margin-top: -6.7vw;
   display: flex;
   flex-direction: column;
 }
@@ -24,13 +24,13 @@
 }
 
 .hero-section h1 {
-  font-size: 14.58vw;
+  font-size: 10.4vw;
   font-weight: 400;
 }
 
 .hero-description {
-  font-size: 5vw;
-  margin-top: 4.5vw;
+  font-size: 3.8vw;
+  margin-top: 2.5vw;
 }
 
 .newspaper-chunks {

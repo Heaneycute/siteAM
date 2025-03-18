@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@font-face {
+  font-family: 'SFProText-Light';
+  src: local('SFProText-Light'), url('/fonts/SFProText-Light.ttf') format('truetype');
+}
 .strategy-section {
   width: 100%;
   display: flex;
@@ -11,6 +13,7 @@
 
 .strategy-image {
   position: relative;
+  margin-right: 10vw;
 }
 
 .strategy-image-container {
@@ -53,19 +56,19 @@
 }
 
 .strategy-text p {
-  font-family: 'Montserrat';
-  font-size: 2.08vw;
+  font-family: 'SFProText-Light';
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
 }
 
 .strategy-button {
-  font-family: 'Montserrat';
-  font-size: 2.08vw;
+  font-family: 'SFProText-Light';
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
   background-color: rgba(255, 216, 190, 1);
   color: rgba(0, 0, 0, 1);
@@ -74,4 +77,16 @@
   border-radius: 2.3vw;
   cursor: pointer;
   box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 2.6vw;
+  width: 29.16vw;
+  height: 4.16vw;
+  padding-left: 2.5vw;
+}
+
+.tg-icon {
+  width: 3.28vw;
+  aspect-ratio: 1;
+  vertical-align: middle;
 }

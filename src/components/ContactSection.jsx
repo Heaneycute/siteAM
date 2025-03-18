@@ -6,11 +6,9 @@ const ContactSection = () => {
   return (
     <section className="contact-section" aria-label="Контакты агентства">
       <p>
-        Менеджер по общению с клиентами, ведущая каждый проект – создатель и
-        <br />
-        руководитель агентства. Лично отвечает за качество выполнения и будет рада
-        <br />
-        обсудить ваш заказ.
+        Менеджер по общению с клиентами, ведущая каждый проект – создатель и руководитель
+        агентства. Лично <br />
+        отвечает за качество выполнения и будет рада обсудить ваш заказ.
       </p>
       <a
         href={telegramLink}
@@ -19,6 +17,7 @@ const ContactSection = () => {
         className="contact-button"
       >
         Позвонить Валерии и обсудить задачу
+        <img src="/siteAM/tgIcon.png" alt="Telegram Icon" className="tg-icon" />
       </a>
     </section>
   );

@@ -43,6 +43,7 @@ const StrategySection = () => {
           className="strategy-button"
         >
           Получить консультацию
+          <img src="/siteAM/tgIcon.png" alt="Telegram Icon" className="tg-icon" />
         </a>
       </div>
     </section>
