@@ -1,7 +1,7 @@
 .SMM-page {
   display: flex;
   width: 100%;
-  padding: 2vw 2vw 9.65vw 2vw;
+  padding: 5vw 2vw 1.1vw 3vw
 }
 
 .left-section {
@@ -12,59 +12,21 @@
 
 .left-section h1 {
   font-family: 'Stengazeta';
-  font-size: 5.2vw;
+  font-size: 3.64vw;
   font-weight: 400;
-  line-height: 3.12vw;
+  line-height: 3vw;
   text-align: left;
   color: #ffd8be;
   margin-bottom: 1vw;
 }
 
 .left-section p {
-  font-size: 2.08vw;
+  font-family: 'SFProText-Light';
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.2vw;
+  line-height: 2vw;
   text-align: left;
   color: #ffd8be;
-}
-
-.details-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5vw 1vw;
-  border-radius: 5.2vw;
-  font-size: 2.08vw;
-  font-weight: 400;
-  line-height: 2.5vw;
-  background: #000000;
-  color: #ffffff;
-  margin-top: 3vw;
-  width: 35.26vw;
-  height: 7.13vw;
-  margin-bottom: 5vw;
-}
-
-.details-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.details-text span {
-  white-space: nowrap;
-}
-
-.details-link .arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4.95vw;
-  aspect-ratio: 1;
-  font-size: 4vw;
-  border: 0.2vw solid #ffffff;
-  border-radius: 50%;
-  background: #ffffff;
-  color: #000000;
 }
 
 .left-illustration {
@@ -78,8 +40,8 @@
 .circle-background-smm {
   position: absolute;
   top: 12vw;
-  left: -2vw;
-  width: 37.43vw;
+  left: 4vw;
+  width: 30.62vw;
   aspect-ratio: 1;
   background: rgba(255, 255, 255, 1);
   border-radius: 50%;
@@ -87,38 +49,39 @@
 }
 
 .mayakovskii-kartin {
-  width: 50.78vw;
-  height: 67.91vw;
+  width: 41.66vw;
+  height: 55.72vw;
   z-index: 3;
+  left: 4vw;
 }
 
 .signature-smm {
-  width: 25vw;
-  height: 50vw;
-  left: -4vw;
-  top: 19vw;
+  width: 20vw;
+  height: 40vw;
+  left: 1vw;
+  top: 17vw;
   z-index: 2;
 }
 
 .smm-chunk {
-  width: 52.5vw;
+  width: 43.02vw;
   aspect-ratio: 1;
-  top: 17vw;
-  left: -8vw;
+  top: 15vw;
+  left: -2vw;
   z-index: 1;
 }
 
 .smm-back-chunk {
-  width: 50vw;
-  height: 64.84vw;
-  top: 4vw;
-  left: -8vw;
+  width: 40vw;
+  height: 55vw;
+  top: 5vw;
+  left: -2vw;
   z-index: 0;
 }
 
 .accordion-section {
   width: 46.19vw;
-  height: 84.11vw;
+  height: 65.2vw;
   border-radius: 1vw;
   background: #ffd8be;
   padding: 1vw;
@@ -142,31 +105,31 @@
 
 .accordion-header {
   font-family: 'SFProText-Light';
-  font-size: 2.08vw;
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5vw;
+  padding: 1vw 0.5vw;
   cursor: pointer;
 }
 
 .accordion-content {
   font-family: 'SFProText-Light';
-  font-size: 2.08vw;
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
-  padding: 0.5vw;
+  padding: 0vw 0.5vw;
 }
 
 .accordion-content .highlighted-text {
   font-family: 'Stengazeta';
-  font-size: 5.2vw;
+  font-size: 3.64vw;
   font-weight: 400;
-  line-height: 3.12vw;
+  line-height: 2.5vw;
   text-align: left;
   color: #000000;
   margin-top: 1.8vw;
@@ -186,11 +149,14 @@
 
 .accordion-content button {
   font-family: 'SFProText-Light';
-  font-size: 2.08vw;
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
-  padding: 0.5vw 1vw;
+  width: 11.97vw;
+  height: 4.42vw;
+  align-items: center;
+  text-align: center;
   background: #000000;
   color: #fff;
   border: none;
@@ -214,14 +180,14 @@
 
 .modal {
   position: absolute;
-  width: 34vw;
-  height: 46vw;
+  width: 33.38vw;
+  height: 32.23vw;
   color: rgba(0, 0, 0, 1);
   background: rgba(255, 255, 255, 0.8);
   font-family: 'SFProText-Light';
-  font-size: 1.7vw;
+  font-size: 1.56vw;
   font-weight: 400;
-  line-height: 2.5vw;
+  line-height: 2vw;
   text-align: left;
   padding: 1vw;
   border-radius: 1.5vw;
