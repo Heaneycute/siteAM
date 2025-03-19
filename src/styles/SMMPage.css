@@ -1,7 +1,19 @@
+:root {
+  --primary-font: 'SFProText-Light';
+  --title-font: 'Stengazeta';
+  --text-color: #ffd8be;
+  --modal-text-color: #000000;
+  --modal-bg: rgba(255, 255, 255, 0.9);
+  --button-bg: #000000;
+  --button-hover-bg: #aa1301;
+  --close-color: #000000;
+  --close-hover-color: #aa1301;
+}
+
 .SMM-page {
   display: flex;
   width: 100%;
-  padding: 5vw 2vw 1.1vw 3vw
+  padding: 5vw 2vw 1.1vw 3vw;
 }
 
 .left-section {
@@ -11,22 +23,22 @@
 }
 
 .left-section h1 {
-  font-family: 'Stengazeta';
+  font-family: var(--title-font);
   font-size: 3.64vw;
   font-weight: 400;
   line-height: 3vw;
   text-align: left;
-  color: #ffd8be;
+  color: var(--text-color);
   margin-bottom: 1vw;
 }
 
 .left-section p {
-  font-family: 'SFProText-Light';
+  font-family: var(--primary-font);
   font-size: 1.56vw;
   font-weight: 400;
   line-height: 2vw;
   text-align: left;
-  color: #ffd8be;
+  color: var(--text-color);
 }
 
 .left-illustration {
@@ -83,7 +95,7 @@
   width: 46.19vw;
   height: 65.2vw;
   border-radius: 1vw;
-  background: #ffd8be;
+  background: var(--text-color);
   padding: 1vw;
 }
 
@@ -92,7 +104,7 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  background: #000000;
+  background: var(--button-bg);
   border-radius: 50%;
   width: 4.58vw;
   aspect-ratio: 1;
@@ -104,7 +116,7 @@
 }
 
 .accordion-header {
-  font-family: 'SFProText-Light';
+  font-family: var(--primary-font);
   font-size: 1.56vw;
   font-weight: 400;
   line-height: 2vw;
@@ -117,7 +129,7 @@
 }
 
 .accordion-content {
-  font-family: 'SFProText-Light';
+  font-family: var(--primary-font);
   font-size: 1.56vw;
   font-weight: 400;
   line-height: 2vw;
@@ -126,12 +138,12 @@
 }
 
 .accordion-content .highlighted-text {
-  font-family: 'Stengazeta';
+  font-family: var(--title-font);
   font-size: 3.64vw;
   font-weight: 400;
   line-height: 2.5vw;
   text-align: left;
-  color: #000000;
+  color: var(--modal-text-color);
   margin-top: 1.8vw;
 }
 
@@ -148,16 +160,14 @@
 }
 
 .accordion-content button {
-  font-family: 'SFProText-Light';
+  font-family: var(--primary-font);
   font-size: 1.56vw;
   font-weight: 400;
   line-height: 2vw;
-  text-align: left;
+  text-align: center;
   width: 11.97vw;
   height: 4.42vw;
-  align-items: center;
-  text-align: center;
-  background: #000000;
+  background: var(--button-bg);
   color: #fff;
   border: none;
   border-radius: 2.3vw;
@@ -166,7 +176,7 @@
 }
 
 .accordion-content button:hover {
-  background: #aa1301;
+  background: var(--button-hover-bg);
 }
 
 .modal-overlay {
@@ -180,11 +190,11 @@
 
 .modal {
   position: absolute;
-  width: 33.38vw;
-  height: 32.23vw;
-  color: rgba(0, 0, 0, 1);
-  background: rgba(255, 255, 255, 0.8);
-  font-family: 'SFProText-Light';
+  width: 34vw;
+  height: 36vw;
+  color: var(--modal-text-color);
+  background: var(--modal-bg);
+  font-family: var(--primary-font);
   font-size: 1.56vw;
   font-weight: 400;
   line-height: 2vw;
@@ -193,20 +203,25 @@
   border-radius: 1.5vw;
   box-shadow: 0 0.2vw 0.41vw rgba(0, 0, 0, 0.2);
   animation: slide-in-left 0.5s ease-out;
+  position: relative;
 }
 
-.modal button {
-  margin-top: 0.5vw;
-  padding: 0.5vw 1vw;
-  background: #c0392b;
-  color: #fff;
-  border: none;
-  border-radius: 0.26vw;
+.modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 2vw;
+  color: var(--close-color);
   cursor: pointer;
+  line-height: 1;
 }
 
-.modal button:hover {
-  background: #c0392b;
+.modal-close:hover {
+  color: var(--close-hover-color);
+}
+
+.details-spacing {
+  margin-top: 2vw;
 }
 
 @keyframes slide-in-left {
@@ -218,8 +233,4 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.modal {
-  animation: slide-in-left 0.5s ease-out;
 }

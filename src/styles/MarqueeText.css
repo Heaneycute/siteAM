@@ -12,10 +12,6 @@
   animation: marquee 20s linear infinite;
 }
 
-.marquee-text:hover {
-  animation-play-state: paused;
-}
-
 .marquee-text span {
   font-family: 'Stengazeta';
   font-size: 3.64vw;

@@ -2,8 +2,7 @@ import '../styles/PartnersSection.css';
 
 const PartnersSection = () => {
   const partners = [
-    'М.видео.png',
-    'Эльдорадо.png',
+    'М.видео,эльдорадо.png',
     'СелоЗеленое.png',
     'Иней.png',
     'Новосвит.png',
@@ -12,12 +11,11 @@ const PartnersSection = () => {
     'АртКвартал.png',
     'Феникс.png',
     'Самбери.png',
-    'Daynight.png',
   ];
 
   return (
     <section className="partners-section">
-      <h2 className="partners-title">НАШИ ПАРТНЕРЫ</h2>
+      <h2 className="partners-title">БРЕНДЫ, С КОТОРЫМИ МЫ СОТРУДНИЧАЛИ</h2>
       <div className="partners-logos">
         {partners.map((logo, index) => (
           <img
